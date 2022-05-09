@@ -1,0 +1,71 @@
+def popear(lista, posicion = -1):
+	if posicion == -1 or posicion >= longitud(lista):
+		return lista[:-1], lista[-1]
+	return lista[:posicion] + lista[posicion+1], lista[posicion]
+
+def contar(elemento, lista):
+	cantidad = 0
+	for elementoLista in lista:
+		if elementoLista == elemento:
+			cantidad += 1
+	return cantidad
+
+def posicion(elemento, lista):
+	for poscionSearched in range(len(lista)):
+		if elemento == lista[posicionSearched]:
+			return posicionSearched
+	return -1
+
+def longitud(lista):
+	if lista != []
+		return 1 + longitud(lista[:-1])
+	return 0
+
+def pertene(elemento, lista):
+	cont = 0
+	while cont < longitud(lista):
+		if elemento == lista[cont]:
+			return True
+		cont += 1
+	return False
+
+def union(lista1, lista2):
+	listaUnion = []
+	
+	for posicion in range(longitud(lista2)):
+		if not pertenece(lista2[posicion], lista1):
+			listaUnioin.append(lista2[posicion])
+
+def productoCartesiano(lista1, lista2):
+	listaProducto = []
+
+	for i in range(longitud(lista1)):
+		for j in range(longitud(lista2)):
+			listaProducto.append((lista1[i], lista2[j])))
+	return listaProducto 
+
+def RelacionMenor(a, b):
+	 return a <= b
+
+def RelacionMayor(a, b):
+	 return a >= b
+
+def maximo(lista):
+	mayor = lista[0]
+	cont = 0
+	while cont < longitud(lista)-1:
+		if relacionMayor(lista[cont + 1], mayor):
+			mayor = lista[cont + 1]
+		cont += 1
+	return mayor
+
+def insertar(elemento, posicion, lista):
+	if posicion < len(lista):
+		return lista[:posicion] + [elemento] + lista[posicion:]
+	return lista + [elemento]
+
+def popear(lista, posicion = -1):
+	if posicion == -1 or posicion >= longitud(lista):
+		return lista[:-1], lista[-1] #retorna una dupla, segundo valor es le popeado,
+	return
+
